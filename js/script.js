@@ -18,7 +18,7 @@ document.getElementById("loginFrom").addEventListener("submit", async function(e
             window.alert(data.message || 'Erro ao fazer login') 
         } 
         localStorage.setItem('authToken', data.original.token)
-        // window.location.href = 'filmes.html'
+        window.location.href = 'filmes.html'
           
     } catch (error) {
         window.alert(error.mensage)
